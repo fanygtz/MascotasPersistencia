@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentPerfil"
+    tools:context="mx.fanygtz.mascotaspersistencia.fragments.PerfilFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivFotoCircular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tigreperfil"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textSize="@dimen/texto_name"
+            android:textAlignment="center"
+            />
+
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rvPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+            </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
